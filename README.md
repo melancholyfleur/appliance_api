@@ -1,3 +1,8 @@
+application_api
+===============
+
+A simple app displaying a good sample of rails and UI skills
+
 ## Setup
 
 ```
