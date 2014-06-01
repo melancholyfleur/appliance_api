@@ -1,10 +1,19 @@
 %h1
-  How many Targets have a reachable address?
+  How many Targets are currently within reach?
 
 %canvas#myChart(width="400" height="400")
 
-%p
-  This shows how many of our targets are currently reachable when pinged.
+%div#legend
+  %div
+    %p For all ships in our fleet:
+  %div#reachable-key
+  %div#label-key Reachable
+  %br
+  %div#unreachable-key
+  %div#label-key Unreachable
+
+%div#home-nav
+  %a{:href => "#{root_path}"} Home
 
 %script(type="text/javascript")
   buildPieChart();

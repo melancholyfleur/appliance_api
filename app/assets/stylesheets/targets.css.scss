@@ -5,10 +5,53 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #E7B083;
-  background-color: #794695;
+  background-color: #935EAF;
   text-align: center;
 }
 
 p {
   color: #E7E783;
+}
+
+a {
+  color: #E7E783;
+}
+
+#home-nav {
+  margin: 10px;
+}
+
+#myChart {
+  margin-left:180px;
+}
+
+#legend {
+  border: 2px solid white;
+  width: 180px;
+  padding: 5px;
+  text-align:left;
+  float:right;
+}
+#legend div p {
+}
+
+#label-key {
+  font-style: strong;
+  display: inline-block;
+}
+
+#reachable-key {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  background-color: #5DA4A4;
+  display: inline-block;
+}
+
+#unreachable-key {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  background-color: #246E6E;
+  display: inline-block;
 }
