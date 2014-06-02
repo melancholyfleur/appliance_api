@@ -15,4 +15,5 @@
 //= require underscore
 //= require chart
 //= require turbolinks
+//= require bootstrap
 //= require_tree .

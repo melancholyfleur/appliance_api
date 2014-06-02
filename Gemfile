@@ -18,6 +18,7 @@ gem 'ffaker'
 gem 'timecop'
 gem 'net-ping'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
