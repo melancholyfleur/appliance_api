@@ -1,8 +1,9 @@
 %h1 Add New Space Ship to the Fleet
 
 %div.appliance-form
-  = form_for @appliance, url: {action: "create"}, html: {role: "form"} do |f|
+  = form_for @appliance, url: {action: "create"}, html: {role: "form", class: "form-horizontal"} do |f|
     = render :partial => "shared/appliance_form", :locals => {:f => f, :appliance => @appliance}
-    = f.submit "Add Ship"
+    %div.form-group
+      = f.submit "Add Data", :class => "btn btn-default"
 
 =render :partial => "shared/navigation"
