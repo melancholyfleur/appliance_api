@@ -3,6 +3,7 @@
 
 %div#top_display
   %div#fleet_list
+    %h3 Current Ships
     - @appliances.each do |appliance|
       %p
         %span#shipname
@@ -11,6 +12,7 @@
         %span#shippilot #{appliance.customer}
 
   %div#chart
+    %h3 Target Numbers per Ship
     %canvas#targetspership(width="800" height="386")
 
 %div#links
