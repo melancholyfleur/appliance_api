@@ -12,8 +12,7 @@
   %div#unreachable-key
   %div#label-key Unreachable
 
-%div#home-nav
-  %a{:href => "#{root_path}"} Home
+=render :partial => "shared/navigation"
 
 %script(type="text/javascript")
   buildPieChart();

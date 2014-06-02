@@ -1,0 +1,22 @@
+%h1
+  Starship Fleet
+
+%div#top_display
+  %div#fleet_list
+    - @appliances.each do |appliance|
+      %p
+        %span#shipname
+          =link_to "#{appliance.name.split('.')[0].titleize}", "#{edit_appliance_path(appliance.id)}"
+        driven by 
+        %span#shippilot #{appliance.customer}
+
+  %div#chart
+    %canvas#targetspership(width="800" height="386")
+
+%div#links
+  =link_to "Add New Ship", "#{new_appliance_path}", :class => "add_ship" 
+
+  =render :partial => "shared/navigation"
+
+%script(type="text/javascript")
+  buildTargetsSpreadChart();

@@ -2,30 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-  font-family: 'Raleway', sans-serif;
-  color: #E7B083;
-  background-color: #935EAF; /* fallback color if gradients are not supported */
-  background: -webkit-linear-gradient(to right, #6D4682, #9667AF); /* For Chrome and Safari */
-  background:    -moz-linear-gradient(to right, #6D4682, #9667AF); /* For old Fx (3.6 to 15) */
-  background:     -ms-linear-gradient(to right, #6D4682, #9667AF); /* For pre-releases of IE 10*/
-  background:      -o-linear-gradient(to right, #6D4682, #9667AF); /* For old Opera (11.1 to 12.0) */ 
-  background:         linear-gradient(right, #6D4682, #9667AF); /* Standard syntax; must be last */
-  text-align: center;
-}
-
-p {
-  color: #E7E783;
-}
-
-a {
-  color: #E7E783;
-}
-
-#home-nav {
-  margin: 10px;
-}
-
 #myChart {
   margin-left:180px;
 }
@@ -34,10 +10,9 @@ a {
   border: 2px solid white;
   width: 180px;
   padding: 5px;
+  margin: 10px;
   text-align:left;
   float:right;
-}
-#legend div p {
 }
 
 #label-key {

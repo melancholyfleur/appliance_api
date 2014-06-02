@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   resources :targets do
     get :reachable, on: :collection
   end
+
+  resources :appliances do
+    get :all_appliances, on: :collection
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

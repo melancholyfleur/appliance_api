@@ -1,0 +1,11 @@
+%h1 #{@appliance.name}
+
+- if flash
+  %div.notice
+    = flash[:notice]
+
+%p
+  Driver: 
+  %span#shippilot #{@appliance.customer}
+
+=render :partial => "shared/navigation"

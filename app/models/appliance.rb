@@ -5,4 +5,8 @@ class Appliance < ActiveRecord::Base
                        presence:   true
 
   validates :customer, presence:   true
+
+  def target_count
+    targets.count
+  end
 end

@@ -1,0 +1,12 @@
+%h1 Update Space Ship Data
+
+- if flash
+  %div.notice
+    = flash[:notice]
+
+%div.appliance-form
+  = form_for @appliance, url: {action: "update"} do |f|
+    = render :partial => "shared/appliance_form", :locals => {:f => f}
+    = f.submit "Update Ship Data"
+
+=render :partial => "shared/navigation"

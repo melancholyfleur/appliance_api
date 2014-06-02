@@ -1,0 +1,48 @@
+// Place all the styles related to the Appliance controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#top_display {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+
+#chart {
+  box-flex:1;
+}
+
+#fleet_list {
+  box-flex:1;
+  width:40%;
+  text-align:left;
+  margin-left:4%;
+}
+
+.clear {
+  clear: both;
+}
+
+#links {
+  margin: 50px;
+}
+
+.appliance-form {
+  margin: 0 auto;
+  padding: 50px;
+  width:50%;
+}
+
+#shipname {
+  font-style: bold;
+  font-size: 1.2em;
+}
+
+#shipname a:link {
+  text-decoration:underline;
+}
+
+#shippilot {
+  font-style: emphasize;
+  color: #5DA4A4;
+}
