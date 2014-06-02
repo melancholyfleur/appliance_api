@@ -23,7 +23,7 @@ class AppliancesController < ApplicationController
       flash.notice = "New Ship Added Successfully"
       redirect_to @appliance
     else
-      flash.alert = @appliance.errors
+      flash.alert = @appliance.errors.full_messages
       render "new"
     end
   end
@@ -35,7 +35,7 @@ class AppliancesController < ApplicationController
   def update
     @appliance = Appliance.find(params[:id])
     if @appliance.try(:update,appliance_params)
-      flash.notice = "New Ship Added Successfully"
+      flash.notice = "Data Updated Successfully"
       redirect_to @appliance
     else
       flash.alert = @appliance.errors

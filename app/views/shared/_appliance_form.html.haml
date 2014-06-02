@@ -1,6 +1,16 @@
 %div.form-group
   = f.label :name, "Ship Name"
   = f.text_field :name, :class => "form-control"
+  %ul
+  - unless @appliance.errors[:name].empty?
+    - @appliance.errors[:name].each do |msg|
+      %li
+        = msg
 %div.form-group
   = f.label :customer, "Pilot"
   = f.text_field :customer, :class => "form-control"
+  %ul
+  - unless appliance.errors[:customer].empty?
+    - appliance.errors[:customer].each do |msg|
+      %li
+        = msg

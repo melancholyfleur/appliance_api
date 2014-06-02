@@ -1,6 +1,6 @@
 %h1 #{@appliance.name}
 
-- if flash
+- if flash[:notice]
   %div.notice
     = flash[:notice]
 

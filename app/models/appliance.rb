@@ -9,4 +9,5 @@ class Appliance < ActiveRecord::Base
   def target_count
     targets.count
   end
+
 end

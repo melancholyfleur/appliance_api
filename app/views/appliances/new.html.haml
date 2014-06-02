@@ -1,12 +1,8 @@
 %h1 Add New Space Ship to the Fleet
 
-- if flash
-  %div.notice
-    = flash[:notice]
-
 %div.appliance-form
-  = form_for @appliance, url: {action: "create"} do |f|
-    = render :partial => "shared/appliance_form", :locals => {:f => f}
+  = form_for @appliance, url: {action: "create"}, html: {role: "form"} do |f|
+    = render :partial => "shared/appliance_form", :locals => {:f => f, :appliance => @appliance}
     = f.submit "Add Ship"
 
 =render :partial => "shared/navigation"
